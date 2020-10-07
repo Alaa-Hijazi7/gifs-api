@@ -5,7 +5,7 @@ const remove = document.getElementById("remove");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-
+  const submit = document.getElementById("submit");
   const searchVal = search.value;
 
   fetch(
@@ -20,6 +20,10 @@ form.addEventListener("submit", (e) => {
   )
     .then((res) => res.json())
     .then((res) => {
+      //CLEAR Search Results
+      gifsDiv.textContent = "";
+
+      //SET SEARCH RESULTS
       res.data.forEach((data) => {
         const url = data.images.original.url;
         const img = document.createElement("img");
@@ -33,7 +37,10 @@ form.addEventListener("submit", (e) => {
     });
 });
 
+//REMOVE BTN
 remove.addEventListener("click", () => {
   gifsDiv.textContent = "";
   search.value = "";
 });
+
+//add downlod btn

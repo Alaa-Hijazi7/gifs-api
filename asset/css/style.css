@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto Condensed", sans-serif;
+  /* font-family: "Roboto Condensed", sans-serif; */
+   font-family: 'Raleway';
 }
 body {
   min-height: 100px;
@@ -28,8 +29,8 @@ body {
   border-radius: 7px;
 }
 #remove:hover {
-  box-shadow: 0 12px 16px 0 rgba(141, 5, 5, 0.404),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 16px 0 rgba(95, 2, 2, 0.61),
+    0 17px 10px 0 rgba(255, 0, 0, 0);
 }
 #submit {
   background-image: linear-gradient(
@@ -52,8 +53,8 @@ body {
   border-radius: 7px;
 }
 #submit:hover {
-  box-shadow: 0 12px 16px 0 rgba(11, 2, 95, 0.61),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 5px 16px 0 rgba(11, 2, 95, 0.61),
+    0 17px 10px 0 rgba(255, 0, 0, 0);
 }
 #search {
   margin-top: 20px;
@@ -66,6 +67,7 @@ body {
   font-size: 20px;
 }
 .text {
+   font-family: 'Raleway';
   margin-top: 100px;
 }
 #gifs {
@@ -76,18 +78,23 @@ body {
   flex-wrap: wrap;
   padding-top: 100px;
 }
-@keyframes imgani {
-  0%   {width: 170px;}
-  25%  {width: 200px;}
-}
 #gifs img {
   box-shadow: 0 12px 16px 0 rgba(114, 75, 75, 0.404),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
   border-radius: 15px;
   width: 170px;
   margin-top: 15px;
+  transition: all .5s, filter 1s ease-in-out;
 }
-#gifs img:hover{
-    animation-name: imgani;
-  animation-duration: 2s;
+#gifs img:hover {
+  width: 250px;
+  transition: all .5s, filter 1s ease-in-out;
+}
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
 }
