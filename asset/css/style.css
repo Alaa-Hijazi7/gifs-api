@@ -1,12 +1,13 @@
 @font-face {
   font-family: alaafont;
-  src: url(/EuclidCircularA-Light.ttf);
+  src: url(./EuclidCircularA-Light.ttf);
 }
 * {
   margin: 0;
   padding: 0;
   font-family: alaafont;
 }
+
 body {
   font-family: alaafont;
   min-height: 100px;
