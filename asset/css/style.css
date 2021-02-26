@@ -18,6 +18,7 @@ body {
   background-color: rgba(235, 229, 229, 0.767);
   background-size: 200px;
 }
+
 #remove {
   font-family: alaafont;
   background-color: #f3416e;
@@ -38,9 +39,11 @@ body {
   border-radius: 7px;
   outline: none;
 }
+
 #remove:hover {
   box-shadow: 0 2px 16px 0 #ec7575;
 }
+
 #submit {
   background-color: #ffffff;
   border: none;
@@ -59,9 +62,11 @@ body {
   border-radius: 7px;
   outline: none;
 }
+
 #submit:hover {
   box-shadow: 0 2px 16px 0 #b3b1b1;
 }
+
 #search {
   width: 20em;
   margin-top: 20px;
@@ -73,16 +78,19 @@ body {
   outline: none;
   font-size: 20px;
 }
+
 #search::placeholder {
   color: rgba(140, 140, 143, 0.411);
   padding-left: 59px;
 }
+
 .text {
   font-family: alaafont;
   margin-top: 100px;
   font-weight: 900;
   letter-spacing: 5px;
 }
+
 #gifs {
   display: flex;
   flex-direction: row;
@@ -93,19 +101,21 @@ body {
   margin-left: 5%;
   margin-right: 5%;
 }
+
 #gifs img {
   box-shadow: 0 12px 16px 0 rgba(114, 75, 75, 0.404),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
   border-radius: 15px;
   width: 170px;
   margin: 15px;
-
   transition: all 0.5s, filter 1s ease-in-out;
 }
+
 #gifs img:hover {
   width: 250px;
   transition: all 0.5s, filter 1s ease-in-out;
 }
+
 .btn {
   background-color: DodgerBlue;
   border: none;
